@@ -36,6 +36,7 @@
             width: 100%;
             height: 100%;
             z-index: -2;
+            /* background: linear-gradient(135deg, #f0f4f8, #d9e2ec); */
             background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #4facfe);
             background-size: 400% 400%;
             animation: gradientShift 15s ease infinite;
@@ -757,11 +758,11 @@
 
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a 
+                <a class="btn btn-primary"
     href="https://drive.google.com/uc?export=download&id=1xKKonJT2AocJzwkIbKhKFFanYIyN_1FE"
     class="btn btn-secondary"
     target="_blank"
-  >
+  >Download Resume</a>
                 <!-- <a href="#" class="btn btn-secondary" onclick="downloadResume(); return false;">Download Resume</a> -->
             </div>
         </div>
@@ -984,16 +985,16 @@
         });
 
         // Custom cursor
-        const cursorDot = document.querySelector('.cursor-dot');
-        const cursorOutline = document.querySelector('.cursor-outline');
+        // const cursorDot = document.querySelector('.cursor-dot');
+        // const cursorOutline = document.querySelector('.cursor-outline');
 
-        window.addEventListener('mousemove', (e) => {
-            cursorDot.style.left = e.clientX + 'px';
-            cursorDot.style.top = e.clientY + 'px';
+        // window.addEventListener('mousemove', (e) => {
+        //     cursorDot.style.left = e.clientX + 'px';
+        //     cursorDot.style.top = e.clientY + 'px';
             
-            cursorOutline.style.left = e.clientX + 'px';
-            cursorOutline.style.top = e.clientY + 'px';
-        });
+        //     cursorOutline.style.left = e.clientX + 'px';
+        //     cursorOutline.style.top = e.clientY + 'px';
+        // });
 
         document.querySelectorAll('a, .btn, .skill-card, .project-card').forEach(el => {
             el.addEventListener('mouseenter', () => {
